@@ -1,0 +1,23 @@
+<mvc:View
+    controllerName="sapui5.rk.onlyui.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="idView3">
+			<pages>
+				<Page title=" This is View3  Page">
+					<content>
+                         <Button text="Go Home" press="onBack"/>              
+                     <List growing ="true" growingThreshold="10" items = "{cdata>/value}">
+                      <items>
+                      <StandardListItem title = "{cdata>CategoryName}"  description="{cdata>ProductName}" info="{cdata>ProductSales}" />
+                      </items> 
+                     </List>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

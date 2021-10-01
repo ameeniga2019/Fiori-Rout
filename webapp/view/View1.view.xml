@@ -1,0 +1,20 @@
+<mvc:View
+    controllerName="sapui5.rk.onlyui.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+		
+			<pages>
+				<Page title="{i18n>title}">
+					<content>
+                    <GenericTile backgroundImage="images/flower.jfif" press="onPress" />
+                    <GenericTile header="Table Display"  press="onTable"/>
+                    </content>
+				</Page>
+			</pages>
+	</App>
+	</Shell>
+</mvc:View>
